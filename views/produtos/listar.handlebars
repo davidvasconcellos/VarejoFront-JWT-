@@ -5,8 +5,8 @@
  <thead>
  </thead>
  <tbody>
- {{#each produto}}
  <tr>
+   {{#each produto}}
  <th><center><img src="{{this.link}}" alt="mostrar imagem" width=150
 height=150><br>
  <strong>{{this.nome}}</strong><br>
@@ -19,8 +19,8 @@ alt="mostrar imagem" /></a>
  <form class="borde-0 m-0" action="/carrinho/Adicionar" method="POST">
  <input type="hidden" name="id_produto" value={{this.id_produto}}>
  </form>
+  {{/each}}
  </tr>
- {{/each}}
  </tbody>
  </div>
  </div>
